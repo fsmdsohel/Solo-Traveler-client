@@ -1,0 +1,166 @@
+.navbar {
+  position: relative;
+}
+
+.navbar_container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav_logo {
+  max-height: 54 px;
+  max-width: 50 px;
+}
+
+.nav_menu {
+  display: flex;
+  margin: 0;
+}
+
+
+.nav_items>.nav_link {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 39px 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav_items>.nav_link:hover {
+  color: var(--orange-color);
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+}
+
+.connect span,
+.connect a,
+.connect button {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.connect a:hover {
+  color: var(--orange-color);
+}
+
+.nav_link.active,
+.link_active {
+  color: var(--orange-color) !important;
+}
+
+.connect .number {
+  margin-right: 10px;
+}
+
+.connect .login {
+  margin-left: 0;
+  padding-left: 10px;
+  border-left: 1px var(--light-grey-color) solid;
+}
+
+.connect .login,
+.connect .sign_up {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.connect .number {
+  color: var(--orange-color);
+}
+
+.bashboard_btn {
+  transition: all 0.3s ease !important;
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 0 !important;
+}
+
+.log_out {
+  padding: 5px 18px;
+  transition: all 0.3s ease !important;
+}
+
+.drop_down {
+  position: relative;
+}
+
+.drop_down_icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--light-grey-color);
+  cursor: pointer;
+}
+
+.drop_down_menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  min-width: 150px;
+  width: 100%;
+  height: 110px;
+  border-radius: 14px;
+  padding: 10px;
+  background-color: #26a68c;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.drop_down_menu.active {
+  display: flex;
+}
+
+.drop_down_menu>small {
+  font-size: 14px;
+}
+
+.drop_down_menu>p {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 18x;
+}
+
+.log_out {
+  margin-left: 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .connect .email,
+  .connect .number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav_menu {
+    flex-direction: column;
+  }
+}

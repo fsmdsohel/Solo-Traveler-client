@@ -1,0 +1,19 @@
+.my_btn_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.my_booking_btn,
+.my_booking_btn1 {
+  font-size: 14px;
+  padding: 6px 16px;
+  box-shadow: 0 3px 0 #df5334;
+}
+
+.my_booking_btn1 {
+  background-color: #26a68c !important;
+  /* color: var(--main-color) !important; */
+  box-shadow: 0 3px 0 #acd4cc;
+}

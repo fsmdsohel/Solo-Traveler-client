@@ -1,0 +1,46 @@
+.page_header {
+  min-height: 356px;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_text p {
+  font-family: Caveat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 0.48px;
+  color: #36bca1;
+  margin-bottom: 12px;
+}
+
+.header_text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #123a32;
+  transition: all 0.3s ease;
+}
+
+.header_text img {
+  max-width: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .page_header {
+    background-position: 75% center !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header_text>h1 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,9 @@
+.dashboard_container {
+  display: flex;
+  position: relative;
+}
+
+.dashboard_content {
+  width: 100%;
+  overflow-y: auto;
+}

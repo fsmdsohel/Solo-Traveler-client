@@ -1,0 +1,121 @@
+.fav_icon {
+  margin: 10px 0;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #36bca1;
+  border-radius: 23px;
+}
+
+.fav_icon>i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.booking_header_content {
+  padding: 50px 15px;
+}
+
+.booking_header_content>small {
+  color: #36bca1;
+  font-weight: 600;
+}
+
+.booking_header_content>h4 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.booking_header_content>div {
+  /* margin: 20px 0; */
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.booking_header_content>div>i {
+  margin: 0 10px;
+  font-size: 5px;
+}
+
+.booking_header_content>div>span {
+  font-weight: 700;
+}
+
+.booking_header_content>div>p {
+  margin: 0;
+}
+
+.booking_header_content>.fav_icon>i {
+  font-size: 20px;
+}
+
+.booking_Details_details {
+  background: url('../../../images/bg_home-1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.booking_details_card {
+  margin: 50px 0;
+}
+
+.booking_details_card>h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a2b48;
+}
+
+.booking_details_card>p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(18, 58, 50, 0.6);
+}
+
+.booking_image_div {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.booking_image_div>img {
+  width: 80%;
+  /* transform: rotate(-1deg); */
+  border: 12px solid white;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.booking_details_i>i {
+  font-size: 25px;
+  color: rgb(236, 146, 126);
+  margin-right: 10px;
+}
+
+.booking_details_i {
+  margin-bottom: 20px;
+}
+
+.booking_details_i>div>p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a2b48;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .book_Now_btn {
+    justify-content: center;
+  }
+
+  .booking_Details_details>div>div {
+    flex-direction: column-reverse;
+  }
+}

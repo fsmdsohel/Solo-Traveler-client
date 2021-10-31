@@ -1,0 +1,49 @@
+.location {
+  margin: 50px 0;
+}
+
+.location .image {
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.location .image img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.location .image img:hover {
+  transform: scale(1.04);
+}
+
+.location_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location_link a {
+  margin: 24 px 0 px 0 px 0 px !important;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.48px;
+  color: var(--main-color, #123a32);
+  position: relative;
+  transition: all 0.35s;
+}
+
+.location_link i {
+  padding-left: 5px;
+  color: #ec5533;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.location_link:hover i {
+  transform: translateX(5px);
+}

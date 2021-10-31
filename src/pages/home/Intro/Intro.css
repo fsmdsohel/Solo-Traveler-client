@@ -1,0 +1,67 @@
+.intro {
+  background: url(../../../images/banner/banner-1.png);
+  background-color: #FEF7EF;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  height: 100vh;
+  z-index: 999;
+}
+
+.intro_wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .intro_text {
+  height: 100%;
+  max-width: 576px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.intro .intro_text h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 100px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  color: #ffffff;
+  margin-bottom: 32px !important;
+  margin-top: 0px;
+}
+
+.intro .intro_text p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px !important;
+  max-width: 532px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .intro .intro_text h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .intro .intro_text h1 {
+    font-size: 50px;
+  }
+}

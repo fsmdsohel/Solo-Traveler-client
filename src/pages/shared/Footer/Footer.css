@@ -1,0 +1,84 @@
+.footer {
+  background-color: #441461;
+  color: #fff;
+}
+
+.footer_items {
+  padding: 50px 0;
+}
+
+.footer_item>p {
+  margin-bottom: 0;
+  color: #b3b1b5;
+}
+
+.social_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.social_icon div {
+  width: 40px;
+  height: auto;
+}
+
+.social_icon img {
+  width: 100%;
+  height: auto;
+}
+
+.footer_item>ul>li {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.footer_item>ul>li:hover {
+  color: #ec927e;
+}
+
+.footer_item>select {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 12px 24px;
+  border-radius: 24px;
+  max-width: 200px;
+  width: 100%;
+  background-color: #350a4f;
+  color: #fff;
+  border: none;
+}
+
+.footer_item>select:focus {
+  background-color: #350a4f;
+  color: #fff;
+  box-shadow: none;
+}
+
+.footer_item>h3 {
+  font-family: "Caveat";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  margin-bottom: 42px;
+  margin-top: -3px;
+}
+
+.footer_item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}

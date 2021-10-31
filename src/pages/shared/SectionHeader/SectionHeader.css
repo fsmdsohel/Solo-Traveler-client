@@ -1,0 +1,35 @@
+.section_header p {
+  font-family: 'Caveat',
+    cursive;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  color: #36bca1;
+  margin-bottom: 0 px;
+  transition: all 0.3s ease;
+}
+
+.section_header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--main-color);
+  transition: all 0.3s ease;
+}
+
+.section_header img {
+  max-width: 100px;
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .section_header>h1 {
+    font-size: 26px;
+  }
+
+  .section_header {
+    align-items: flex-start !important;
+  }
+}
