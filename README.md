@@ -1,18 +1,18 @@
 # Online Courses Website
 
-[Live website](https://tinzer-authentication.web.app/)
+[Live website](https://solotravellers-d88d7.web.app/)
 
 ## About The Project
 
-- This website is about a hospital which name is Tinzer.
-- Tinzer is a one of the recognize hospital and they provide various Service and their survice are shown in the website in details.
-- In this website shows the service details properly.
-- In this website user can easily create account.
-- In this website user easily can find Tinzer address.
+- This website is about travel agency.
+- We offer best tour places.
+- we have best tour guides , who have experience in this field and also have knowledges about places.
+- we shows overview while a tourist wants to book place , so tourist can get easily proper information about tour places.
+- By Using our website, user easily can manage his/her booking places and also can get proper guideline about tour.
 
 > ## Website Screenshoot <br>
 >
-> ![Website ScreenShoot](https://i.ibb.co/mGNykZp/screencapture-tinzer-authentication-web-app-home-2021-10-20-22-46-04.png)
+> ![Website ScreenShoot](https://i.ibb.co/Ht64gHn/screencapture-solotravellers-d88d7-web-app-2021-10-31-23-03-10.png)
 
 ## Available Scripts
 
