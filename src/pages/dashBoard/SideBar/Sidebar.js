@@ -1,10 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory, useRouteMatch } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import sidebarLogo from "../../../images/logo.png";
 import "./Sidebar.css";
 
 const Sidebar = ({ styles }) => {
-  const { navToggle } = useAuth();
+  const { navToggle, setLoading } = useAuth();
+  const history = useHistory();
+
+  let { path, url } = useRouteMatch();
+  const handleBackToHome = () => {
+    setLoading(true);
+    history.push("/");
+  };
 
   return (
     <aside className={navToggle ? "" : "active"} style={styles}>
@@ -15,35 +22,40 @@ const Sidebar = ({ styles }) => {
         </div>
         <ul className="sidebar_menu">
           <li className="sidebar_link">
-            <NavLink activeClassName="active" to="/dashboard/profile">
+            <NavLink activeClassName="active" to={`${url}/profile`}>
               <i className="fas fa-user"></i> My Profile
             </NavLink>
           </li>
           <li className="sidebar_link">
-            <NavLink activeClassName="active" to="/dashboard/my-order">
+            <NavLink activeClassName="active" to={`${url}/my-order`}>
               <i className="fas fa-list-alt"></i> My Booking
             </NavLink>
           </li>
           <li className="sidebar_link">
-            <NavLink activeClassName="active" to="/dashboard/check-out">
+            <NavLink activeClassName="active" to={`${url}/check-out`}>
               <i className="fas fa-shopping-cart"></i> Check Out
             </NavLink>
           </li>
           <li className="sidebar_link">
-            <NavLink activeClassName="active" to="/dashboard/booking-list">
+            <NavLink activeClassName="active" to={`${url}/booking-list`}>
               <i className="fas fa-indent"></i> Booking List
             </NavLink>
           </li>
           <li className="sidebar_link">
-            <NavLink activeClassName="active" to="/dashboard/manage-booking">
+            <NavLink activeClassName="active" to={`${url}/manage-booking`}>
               <i className="fas fa-tasks"></i> Manage Booking
             </NavLink>
           </li>
           <li className="sidebar_link">
-            <NavLink activeClassName="active" to="/dashboard/add-booking">
+            <NavLink activeClassName="active" to={`${url}/add-booking`}>
               <i className="fas fa-plus-square"></i> Add Booking
             </NavLink>
           </li>
+          <div className="sidebar_logo">
+            <div onClick={handleBackToHome} className="btn-custom back_btn">
+              <i className="fas fa-sign-out-alt"></i> Back to Home
+            </div>
+          </div>
         </ul>
       </div>
     </aside>

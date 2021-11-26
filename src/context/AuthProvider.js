@@ -5,7 +5,6 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [show, setShow] = useState(false);
-  const [dashboard, setDashboard] = useState(false);
   const [loding, setLoading] = useState(false);
   const [navToggle, setNavToggle] = useState(true);
 
@@ -18,8 +17,6 @@ const AuthProvider = ({ children }) => {
         allContext,
         show,
         setShow,
-        dashboard,
-        setDashboard,
         loding,
         setLoading,
         navToggle,

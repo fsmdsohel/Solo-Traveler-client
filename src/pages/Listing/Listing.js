@@ -1,11 +1,13 @@
-import PageHeader from "../shared/PageHeader/PageHeader";
-import bgImg from "../../images/Bg-2.png";
-import { Col, Container, Row } from "react-bootstrap";
-import "./Listing.css";
-import { useEffect } from "react";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import bgImg from "../../images/Bg-2.png";
 import BookingCard from "../shared/BookingCard/BookingCard";
+import Footer from "../shared/Footer/Footer";
+import Navbar from "../shared/Navbar/Navbar";
+import PageHeader from "../shared/PageHeader/PageHeader";
+import SignMeUp from "../shared/SignMeUp/SignMeUp";
+import "./Listing.css";
 
 const Listing = () => {
   const [bookingData, setBookingData] = useState([]);
@@ -23,6 +25,7 @@ const Listing = () => {
   }, []);
   return (
     <>
+      <Navbar></Navbar>
       <PageHeader
         image={bgImg}
         header="Pick Your Best Experience"
@@ -232,6 +235,8 @@ const Listing = () => {
           </Col>
         </Row>
       </Container>
+      <SignMeUp></SignMeUp>
+      <Footer></Footer>
     </>
   );
 };

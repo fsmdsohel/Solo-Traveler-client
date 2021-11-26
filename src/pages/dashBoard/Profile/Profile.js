@@ -1,12 +1,10 @@
-import "./Profile.css";
-import useAuth from "../../../hooks/useAuth";
 import swal from "sweetalert";
-import { useHistory } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
+import "./Profile.css";
 
 const Profile = () => {
-  const { allContext, setLoading } = useAuth();
+  const { allContext } = useAuth();
   const { user, logOut } = allContext;
-  const history = useHistory();
   const handleLogOut = () => {
     swal({
       title: "Are you sure?",
@@ -24,11 +22,6 @@ const Profile = () => {
     });
   };
 
-  const handleBackToHome = () => {
-    setLoading(true);
-    history.push("/");
-  };
-
   return (
     <>
       <div className="profile">
@@ -41,11 +34,6 @@ const Profile = () => {
         <button onClick={handleLogOut} className="btn-custom profile_log">
           Log Out
         </button>
-      </div>
-      <div className="sidebar_logo">
-        <div onClick={handleBackToHome} className="btn-custom back_btn">
-          <i className="fas fa-sign-out-alt"></i> Back to Home
-        </div>
       </div>
     </>
   );

@@ -1,72 +1,20 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./pages/shared/Navbar/Navbar";
-import Home from "./pages/home/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 import AboutUs from "./pages/aboutUs/AboutUs";
-import NotFound from "./pages/NotFound/NotFound";
 import ContactUs from "./pages/contactUs/ContactUs";
+import DashBoard from "./pages/dashBoard/DashBoard";
+import BookingDetails from "./pages/home/BookingDetails/BookingDetails";
+import Home from "./pages/home/Home";
 import Listing from "./pages/Listing/Listing";
 import Login from "./pages/login/Login";
-import SignUp from "./pages/signUp/SignUp";
-import Footer from "./pages/shared/Footer/Footer";
+import NotFound from "./pages/NotFound/NotFound";
 import PrivateRoute from "./pages/shared/PrivateRoute/PrivateRoute";
-import DashBoard from "./pages/dashBoard/DashBoard";
-import { useEffect } from "react";
-import useAuth from "./hooks/useAuth";
-import SignMeUp from "./pages/shared/SignMeUp/SignMeUp";
-import BookingDetails from "./pages/home/BookingDetails/BookingDetails";
+import SignUp from "./pages/signUp/SignUp";
 
 function App() {
-  const { dashboard, setDashboard } = useAuth();
-  useEffect(() => {
-    const url = window.location.pathname;
-    if (
-      url === "/dashboard/profile" ||
-      url === "/dashboard/my-order" ||
-      url === "/dashboard/check-out" ||
-      url === "/dashboard/booking-list" ||
-      url === "/dashboard/manage-booking" ||
-      url === "/dashboard/add-booking"
-    ) {
-      setDashboard(true);
-    } else {
-      setDashboard(false);
-    }
-  }, []);
-
-  let oldHref = document.location.pathname;
-  const bodyList = document.querySelector("body"),
-    observer = new MutationObserver(function (mutations) {
-      mutations.forEach(function (mutation) {
-        if (oldHref !== document.location.pathname) {
-          oldHref = document.location.pathname;
-          const url = window.location.pathname;
-          if (
-            url === "/dashboard/profile" ||
-            url === "/dashboard/my-order" ||
-            url === "/dashboard/check-out" ||
-            url === "/dashboard/booking-list" ||
-            url === "/dashboard/manage-booking" ||
-            url === "/dashboard/add-booking"
-          ) {
-            setDashboard(true);
-          } else {
-            setDashboard(false);
-          }
-        }
-      });
-    });
-
-  const config = {
-    childList: true,
-    subtree: true,
-  };
-
-  observer.observe(bodyList, config);
   return (
     <Router>
-      {!dashboard ? <Navbar></Navbar> : ""}
       <Switch>
         <Route exact path="/">
           <Home></Home>
@@ -99,14 +47,6 @@ function App() {
           <NotFound></NotFound>
         </Route>
       </Switch>
-      {!dashboard ? (
-        <>
-          <SignMeUp></SignMeUp>
-          <Footer></Footer>
-        </>
-      ) : (
-        ""
-      )}
     </Router>
   );
 }
