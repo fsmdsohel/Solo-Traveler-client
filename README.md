@@ -1,4 +1,4 @@
-# Online Courses Website
+# Traveling Website
 
 [Live website](https://solotravellers-d88d7.web.app/)
 
